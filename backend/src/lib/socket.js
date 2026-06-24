@@ -9,7 +9,7 @@ dotenv.config()
 
 const io = new Server(server, {
     cors:{
-        origin:"http://13.127.129.7:3000"
+        origin: ["http://localhost:3000"]
     }
 })
 
