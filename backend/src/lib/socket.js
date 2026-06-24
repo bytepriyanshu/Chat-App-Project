@@ -1,13 +1,15 @@
 import {Server} from "socket.io"
 import http from "http";
 import express from "express"
+import dotenv from "dotenv"
 
 const app = express();
 const server = http.createServer(app)
+dotenv.config()
 
 const io = new Server(server, {
     cors:{
-        origin:["http://localhost:3000"]
+        origin:"http://13.127.129.7:3000"
     }
 })
 
